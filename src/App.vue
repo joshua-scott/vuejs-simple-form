@@ -7,7 +7,9 @@
                 <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
                     <img :src="'https://raw.githubusercontent.com/joshua-scott/vuejs-simple-form/master/dist/logo.png?raw=true'" alt="Vue.js logo" class="img-responsive center-block">
                     <h2 class="title">An example form in Vue.js</h2>
-                    <p class="notice"><em>Note: HTML 'require' attributes should also be used, but are omitted here in favour of learning Vue. Ditto for 'type="email"', and the minlength password attribute</em></p>
+                    <p class="notice"><em>
+                        <strong>Note: </strong>HTML validation attributes such as 'require' and 'minlength' should also be used, but are omitted here to demonstrate how they can be implemented using Vue.</em>
+                    </p>
                     <div class="form-group">
                         <label for="first-name">First name</label>
                         <input
@@ -34,7 +36,7 @@
                             id="email" 
                             placeholder="johnsmith@example.com"
                             v-model.trim="user.email">
-                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        <small class="form-text text-muted">We'll never share your email with anyone else.</small>
                     </div>
                     <div class="form-group">
                         <label for="password1">Password (minimum {{ minPasswordLength }} characters)</label>
@@ -62,6 +64,7 @@
                             class="form-check-input" 
                             id="data-check"
                             v-model="user.storeData">
+                        <small class="form-text text-muted">This is an example form and won't actually store anything.</small>                        
                     </div>
                 </div>
             </div>
