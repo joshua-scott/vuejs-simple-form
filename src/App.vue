@@ -5,7 +5,7 @@
             @submit.prevent="submitForm">
             <div class="row">
                 <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
-                    <img src="./assets/logo.png" alt="Vue.js logo" class="img-responsive center-block">
+                    <img src="./logo.png" alt="Vue.js logo" class="img-responsive center-block">
                     <h2 class="title">An example form in Vue.js</h2>
                     <p class="notice"><em>Note: HTML 'require' attributes should also be used, but are omitted here in favour of learning Vue. Ditto for 'type="email"', and the minlength password attribute</em></p>
                     <div class="form-group">
